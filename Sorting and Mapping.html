@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Array Sort and Reverse</h2>
+
+    <button onclick="sortfunction()">Sort Me</button>
+    <button onclick="reversefunction()">Reverse</button>
+
+    <p id="result"></p>
+
+    <script>
+      var character = [
+        "Doreamon",
+        "Shijuka",
+        "Nobita",
+        "Gian",
+        "Sunio",
+        "Dekisugi",
+        "DoraCake",
+      ];
+
+      document.getElementById("result").innerHTML = character;
+
+      function sortfunction() {
+        character.sort();
+        document.getElementById("result").innerHTML = character;
+      }
+      function reversefunction() {
+        character.reverse();
+        document.getElementById("result").innerHTML = character;
+      }
+    </script>
+  </body>
+</html>

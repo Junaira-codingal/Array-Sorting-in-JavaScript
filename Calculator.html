@@ -11,11 +11,11 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #a2beda; /* Soft pastel blue */
+        background-color: #a2beda;
         align-items: center;
         margin: 0;
         color: #2c3e50;
-        text-align: center; /* Dark blue for text */
+        text-align: center;
       }
 
       .calculator {
@@ -62,7 +62,7 @@
 
       button {
         width: 70%;
-        background-color: #5c5470; /* Muted purple-gray */
+        background-color: #5c5470;
         color: white;
         border: none;
         cursor: pointer;
@@ -70,7 +70,7 @@
       }
 
       button:hover {
-        background-color: #4a4060; /* Darker shade on hover */
+        background-color: #4a4060;
       }
 
       p {
@@ -96,12 +96,10 @@
 
     <script>
       function calculate() {
-        // Step 1: Get values from input boxes
         var num1 = parseFloat(document.getElementById("num1").value);
         var num2 = parseFloat(document.getElementById("num2").value);
         var operator = document.getElementById("operator").value;
 
-        // Step 2: Perform calculation based on operator
         var result;
         if (operator === "+") {
           result = num1 + num2;
